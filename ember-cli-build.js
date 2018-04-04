@@ -25,5 +25,18 @@ module.exports = function(defaults) {
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
 
+  app.import({
+    development: 'node_modules/react/umd/react.development.js',
+    production: 'node_modules/react/umd/react.production.min.js'
+  });
+
+  app.import({
+    development: 'node_modules/react-dom/umd/react-dom.development.js',
+    production: 'node_modules/react-dom/umd/react-dom.production.min.js'
+  });
+
+  app.import('vendor/shims/react.js');
+  app.import('vendor/shims/react-dom.js');
+
   return app.toTree();
 };
