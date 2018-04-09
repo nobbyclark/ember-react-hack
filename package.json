@@ -51,6 +51,7 @@
   },
   "dependencies": {
     "react": "^16.3.1",
-    "react-dom": "^16.3.1"
+    "react-dom": "^16.3.1",
+    "rembr-component": "1.0.1"
   }
 }

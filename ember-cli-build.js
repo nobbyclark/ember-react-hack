@@ -38,5 +38,11 @@ module.exports = function(defaults) {
   app.import('vendor/shims/react.js');
   app.import('vendor/shims/react-dom.js');
 
+  app.import('node_modules/rembr-component/dist/index.js', {
+    using: [{
+      transformation: 'amd', as: 'yolo' }
+    ]
+  });
+
   return app.toTree();
 };
